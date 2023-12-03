@@ -6,18 +6,22 @@ on:
 name: Create Release
 
 jobs:
-  build: 
+  release-on-push:
     name: Create Release
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - id: release
+        uses: rymndhng/release-on-push-action@master
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          bump_version_scheme: minor
+          use_github_release_notes: true
+          tag_prefix: v
+          
+      - name: Check Output Parameters
+        run: |
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
+          echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
           
