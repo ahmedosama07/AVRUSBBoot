@@ -1,0 +1,55 @@
+Added Component: Designator=4u7(RAD0.1)
+Added Component: Designator=27p(RAD0.1)
+Added Component: Designator=100n(RAD0.1)
+Added Component: Designator=C2(RAD0.1)
+Added Component: Designator=C5(RAD0.1)
+Add Component: Footprint Not Found USB
+Added Component: Designator=P?(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=U?(PDIP28)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2486H-AVR-09/02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "04-Mar-2005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Stylized 3D Model Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "DIP; 28 Leads; Row Spacing 7.62 mm; Pitch 2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "28P3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "revB, Sep-2001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "17-Sep-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=U?(TO-220)
+Added Pin To Net: NetName=GND Pin=4u7-1
+Added Pin To Net: NetName=GND Pin=27p-1
+Added Pin To Net: NetName=GND Pin=100n-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-8
+Added Pin To Net: NetName=GND Pin=U?-22
+Added Net: Name=GND
+Added Pin To Net: NetName=Net4u7_2 Pin=4u7-2
+Added Pin To Net: NetName=Net4u7_2 Pin=U?-1
+Added Net: Name=Net4u7_2
+Added Pin To Net: NetName=Net27p_2 Pin=27p-2
+Added Pin To Net: NetName=Net27p_2 Pin=U?-10
+Added Net: Name=Net27p_2
+Added Pin To Net: NetName=Net100n_1 Pin=100n-1
+Added Pin To Net: NetName=Net100n_1 Pin=C5-1
+Added Pin To Net: NetName=Net100n_1 Pin=U?-3
+Added Pin To Net: NetName=Net100n_1 Pin=U?-7
+Added Pin To Net: NetName=Net100n_1 Pin=U?-20
+Added Net: Name=Net100n_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=U?-9
+Added Net: Name=NetC2_2
+Added Net: Name=NetJ1_2
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetR?_1 Pin=U?-6
+Added Net: Name=NetR?_1
+Add Net: Net with name "NetR?_1" already exists
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1
