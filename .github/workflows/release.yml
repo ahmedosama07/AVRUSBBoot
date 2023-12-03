@@ -1,27 +1,22 @@
-on:
+on: 
   push:
-    branches: [ "main" ]
-    tags:
-      - 'v*'
-name: Create Release
+    branches:
+      - main
 
 jobs:
   release-on-push:
-    name: Create Release
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
     steps:
-      - id: release
-        uses: rymndhng/release-on-push-action@master
+      - name: Create Release
+        id: create_release
+        uses: joutvhu/create-release@v1
         with:
-          bump_version_scheme: minor
-          use_github_release_notes: true
-          tag_prefix: v
-          
-      - name: Check Output Parameters
-        run: |
-          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
-          echo "Got release version ${{ steps.release.outputs.version }}"
-          echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
-          
+          tag_name: ${{ github.run_number }}
+          name: Release ${{ github.run_number }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
