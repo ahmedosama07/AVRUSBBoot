@@ -54,7 +54,7 @@ flash:	all
 	$(UISP) --erase --upload --verify if=main.hex
 
 avrdude: 
-	avrdude -c avr910 -p atmega8 -U flash:w:main.hex
+	avrdude -c usbasp -p atmega8 -U flash:w:main.hex
 
 # Fuse low byte:
 # 0xef = 1 1 1 0   1 1 1 1
