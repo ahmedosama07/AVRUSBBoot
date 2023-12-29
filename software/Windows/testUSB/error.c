@@ -33,7 +33,7 @@
 #endif
 
 #define USB_ERROR_BEGIN			500000
-
+#define LOG_APPNAME "AVRUSBBOOT"
 #ifndef LOG_APPNAME
 #define LOG_APPNAME "LOG_APPNAME define missing"
 #endif
