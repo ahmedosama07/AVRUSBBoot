@@ -1,0 +1,6 @@
+﻿  testUSB.cpp
+D:\Engineering\College\Year 3\First Term\Embedded Systems\testUSB\testUSB\testUSB.cpp(9,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+D:\Engineering\College\Year 3\First Term\Embedded Systems\testUSB\testUSB\testUSB.cpp(9,1): message : '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+  testUSB.vcxproj -> D:\Engineering\College\Year 3\First Term\Embedded Systems\testUSB\x64\Debug\testUSB.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
